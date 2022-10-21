@@ -12,6 +12,7 @@ int main(int argc,char** argv)
 
 	HZ_CORE_WARN("Initial Log");
 	HZ_CORE_ERROR("Initial Log");
+
 	auto app = Hazel::CreateApplication();
 	app->Run();
 	delete app;
