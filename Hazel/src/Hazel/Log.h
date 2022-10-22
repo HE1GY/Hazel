@@ -1,8 +1,10 @@
 #pragma once
 
-#include <memory>
+#include "hzpch.h"
 #include "Core.h"
+
 #include "spdlog/spdlog.h"
+#include "spdlog/fmt/ostr.h"
 #include "spdlog/sinks/stdout_color_sinks.h"
 
 namespace Hazel
