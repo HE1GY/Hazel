@@ -25,8 +25,8 @@ namespace Hazel
 	};
 
 
-#define EVENT_CLASS_TYPE(type) static EventType GetStaticType(){return EventType::##type;}\
-								virtual EventType GetEventType()const override{return GetStatisType();}\
+#define EVENT_CLASS_TYPE(type) virtual EventType GetEventType()const override{return GetStaticType();}\
+								static EventType GetStaticType(){return EventType::##type; }\
 								virtual const char* GetName() const override {return #type;}
 
 #define EVENT_CLASS_CATEGORY(category) virtual int GetCategoryFlags() const override {return category;}
@@ -34,7 +34,7 @@ namespace Hazel
 
 	class HAZEL_API Event
 	{
-		friend class EventDispatch;
+		friend class EventDispatcher;
 
 	public:
 		virtual EventType GetEventType()const = 0;
@@ -54,6 +54,8 @@ namespace Hazel
 	protected:
 		bool m_Handled = false;
 	};
+
+
 
 	class HAZEL_API EventDispatcher  //May be error
 	{

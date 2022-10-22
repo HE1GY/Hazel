@@ -1,6 +1,6 @@
 #pragma once
 #include "hzpch.h"
-#include "Hazel/Event/Event.h"
+#include "Hazel/Events/Event.h"
 
 namespace Hazel
 {

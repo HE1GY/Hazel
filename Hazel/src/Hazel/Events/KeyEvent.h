@@ -1,6 +1,6 @@
 #pragma once
 #include "hzpch.h"
-#include "Hazel/Event/Event.h"
+#include "Hazel/Events/Event.h"
 
 
 
@@ -53,6 +53,8 @@ namespace Hazel
 	public:
 		KeyReleasedEvent(int keycode)
 			:KeyEvent(keycode){ }
+
+		EVENT_CLASS_TYPE(KeyReleased)
 
 		std::string ToString() const override
 		{

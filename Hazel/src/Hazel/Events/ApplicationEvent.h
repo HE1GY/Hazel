@@ -1,6 +1,6 @@
 #pragma once
 #include "hzpch.h"
-#include "Hazel/Event/Event.h"
+#include "Hazel/Events/Event.h"
 
 
 namespace Hazel
@@ -31,10 +31,9 @@ namespace Hazel
 	};
 
 
-	class HAZEL_API WindowColseEvent : public Event
+	class HAZEL_API WindowCloseEvent : public Event
 	{
 	public:
-		
 		EVENT_CLASS_TYPE(WindowClose)
 		EVENT_CLASS_CATEGORY(EventCategoryApplication)
 	};
