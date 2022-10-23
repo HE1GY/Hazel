@@ -4,8 +4,8 @@
     <Filter Include="Hazel">
       <UniqueIdentifier>{99294D0D-053E-75BE-CEBF-181E3A9371EF}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Hazel\Event">
-      <UniqueIdentifier>{AAB91B9B-166F-9490-9F63-8E670B188B94}</UniqueIdentifier>
+    <Filter Include="Hazel\Events">
+      <UniqueIdentifier>{5DEF92FE-4952-22A3-F2D7-5A59DE19EE25}</UniqueIdentifier>
     </Filter>
     <Filter Include="Platfrom">
       <UniqueIdentifier>{8AD388B4-76A0-E3BF-9FB9-D1678BE5184E}</UniqueIdentifier>
@@ -26,16 +26,22 @@
       <Filter>Hazel</Filter>
     </ClInclude>
     <ClInclude Include="src\Hazel\Events\ApplicationEvent.h">
-      <Filter>Hazel\Event</Filter>
+      <Filter>Hazel\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Hazel\Events\Event.h">
-      <Filter>Hazel\Event</Filter>
+      <Filter>Hazel\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Hazel\Events\KeyEvent.h">
-      <Filter>Hazel\Event</Filter>
+      <Filter>Hazel\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Hazel\Events\MouseEvent.h">
-      <Filter>Hazel\Event</Filter>
+      <Filter>Hazel\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hazel\Layer.h">
+      <Filter>Hazel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hazel\LayerStack.h">
+      <Filter>Hazel</Filter>
     </ClInclude>
     <ClInclude Include="src\Hazel\Log.h">
       <Filter>Hazel</Filter>
@@ -50,6 +56,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Hazel\Application.cpp">
+      <Filter>Hazel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hazel\Layer.cpp">
+      <Filter>Hazel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hazel\LayerStack.cpp">
       <Filter>Hazel</Filter>
     </ClCompile>
     <ClCompile Include="src\Hazel\Log.cpp">
