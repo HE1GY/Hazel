@@ -15,6 +15,11 @@ namespace Hazel
 
 		void OnUpdate()override;
 
+		inline virtual void* GetNativeWindow()const override
+		{
+			return m_Window;
+		};
+
 		inline unsigned int GetHeight()const override
 		{
 			return m_Data.Height;

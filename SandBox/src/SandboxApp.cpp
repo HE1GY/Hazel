@@ -10,12 +10,18 @@ public:
 
 	void OnUpdate()override 
 	{
-		HZ_INFO("ExampleLayer::Update");
 	}
 
 	void OnEvent(Hazel::Event& event)override
 	{
-		HZ_TRACE("{0}", event);
+		Hazel::EventDispatcher dispatcher(event);
+		dispatcher.Dispatch<Hazel::KeyPressedEvent>(HZ_BIND_EVENT_FN(ExampleLayer::OnKeyPressed));
+	}
+
+	bool OnKeyPressed(Hazel::KeyPressedEvent& keyPressed)
+	{
+		HZ_TRACE("{0}",(char)keyPressed.GetKeyCode());
+		return false;
 	}
 };
 
