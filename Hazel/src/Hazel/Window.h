@@ -8,6 +8,8 @@
 #include "Hazel/Events/KeyEvent.h"
 #include "Hazel/Events/MouseEvent.h"
 
+#include "Renderer/GraphicsContext.h"
+
 
 namespace Hazel
 {
@@ -44,5 +46,8 @@ namespace Hazel
 		virtual void* GetNativeWindow()const = 0;
 
 		static Window* Create(const WindowProps& props = WindowProps());
+
+	protected:
+		GraphicsContext* m_Context;
 	};
 }
