@@ -24,6 +24,8 @@ void Hazel::OpenGLVertexBuffer::UnBind()const
 	glBindBuffer(GL_ARRAY_BUFFER, 0);
 }
 
+
+
 //IndexBuffer
 
 Hazel::OpenGLIndexBuffer::OpenGLIndexBuffer(uint32_t* indices, uint32_t count):
