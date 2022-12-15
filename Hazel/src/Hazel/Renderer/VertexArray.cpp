@@ -7,9 +7,9 @@ Hazel::VertexArray* Hazel::VertexArray::Create()
 {
     switch(Renderer::GetAPI())
     {
-        case RendererAPI::None:HZ_ASSERT(false, "RendererAPI::None is curretly not supported!");
+        case RendererAPI::API::None:HZ_ASSERT(false, "RendererAPI::None is curretly not supported!");
             break;
-        case RendererAPI::OpenGL:
+        case RendererAPI::API::OpenGL:
             return new OpenGLVertexArray();
     }
     HZ_ASSERT(false, "Unknown RendereAPI!");
